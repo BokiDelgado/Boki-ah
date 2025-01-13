@@ -1,0 +1,186 @@
+/*estilo "general" */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;}
+
+ /*tipografias a usar*/
+@font-face {
+    font-family: "josefin";
+    src: url("./../fonts/JosefinSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "lilita";
+    src: url("./../fonts/LilitaOne-Regular.ttf") format("truetype");
+}
+
+/*
+Colores
+crema claro (#F9E9D9)
+Naranja suave (#F4A261)
+Verde oliva claro (#A3B18A)*/
+
+
+/*Barra de navegacion*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #F9E9D9;
+    margin-bottom: 15px;
+}
+
+.logo{
+    max-width: 5rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #F4A261;
+    font-family: 'lilita';
+    font-size: 20px;
+}
+
+.nav-links li a:hover{
+    color: #1c1c1c;
+}
+
+/*icono par el menu */
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/*movil barra de navegación*/
+
+@media screen and (max-width: 800px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+    .cerrar-menu {
+        color: #ececec;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    /*funcion con javascript*/
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-links li a:hover{
+        color: #A3B18A
+    }
+
+    .nav-links li a {
+        color: #F9E9D9;
+    }
+
+    .btn_donate-btn:hover{
+        color: #F4A261;
+        padding: 3px;
+        border-radius: 8px;
+        border: 1px solid #F4A261;
+    }
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    background-color: #F9E9D9;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.footer:hover{
+    background-color: #A3B18A;
+}
+
+.footer-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-family: 'lilita';
+    font-size: 20px;
+}
+
+.footer-nav li a:hover {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #F9E9D9;
+}
+/*redes sociale */
+.footer-social{
+    margin-left: 25px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+.social-item{
+    list-style-type: none;
+}
+
+.social-item a img{
+    max-width: 3rem;
+}
+
+.footer-info{
+    margin-top: 20px;
+    text-align: center;
+    text-wrap: pretty;
+    color: #1c1c1c;
+    font-family: "josefin";
+}
+
+

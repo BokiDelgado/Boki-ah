@@ -1,0 +1,89 @@
+body{
+    background-color: #e8e2e2;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*intro*/
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color:  #F9E9D9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    font-family: "josefin";
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #1c1c1c;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* donaciones */
+.donation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color:  #1c1c1c;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-info {
+    font-family: "josefin";
+    flex: 1;
+    text-align: left;
+    color: #F9E9D9;
+}
+
+.donation-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #F4A261;
+    font-weight: bold;
+}
+
+.donation-info p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.donation-image figure {
+    flex: 1;
+    text-align: center;
+}
+
+.donation-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsivoo */
+@media (max-width: 800px) {
+    .donation-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donation-info {
+        text-align: center;
+    }
+}
