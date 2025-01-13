@@ -56,14 +56,18 @@ body{
 }
 
 
-.cards-section .card:nth-child(3n+1) {
+.gallery-item:nth-child(3n+1) {
     --random-bg-color: #f9e9d9; 
+    background-color: var(--random-bg-color);
 }
-.cards-section .card:nth-child(3n+2) {
+.gallery-item:nth-child(3n+2) {
     --random-bg-color: #f4a261; 
+    background-color: var(--random-bg-color);
+
 }
-.cards-section .card:nth-child(3n+3) {
+.gallery-item:nth-child(3n+3) {
     --random-bg-color: #a3b18a; 
+    background-color: var(--random-bg-color);
 }
 
 /*mini transicion*/
